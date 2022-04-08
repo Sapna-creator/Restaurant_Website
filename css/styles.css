@@ -1,0 +1,172 @@
+
+body {
+  background-color: rgba(6, 12, 34, 0.8);
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin:0;
+  padding: 10px;
+  color: #fff;
+}
+
+#intro .intro-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 90px;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 15px;
+}
+
+#intro h1 {
+  color: #f82249;
+  font-family: "Sacramento", sans-serif;
+  font-size: 150px;
+  font-weight: 600;
+}
+
+#intro h2{
+  color: #fff;
+  font-family: "Send Flowers", sans-serif;
+  font-size: 60px;
+}
+#intro h3 {
+  color: #fff;
+  font-family: "Send Flowers", sans-serif;
+  font-size: 50px;
+}
+
+#intro {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/intro-bg.jpg) top center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+#intro:before {
+  content: "";
+  background: rgba(6, 12, 34, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#main:before {
+  content: "";
+  background: rgba(6, 12, 34, 0.8);
+}
+
+
+
+.item h3{
+  color: #f82249;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 120px;
+}
+.item p{
+  color: #f82249;
+  font-family: "Send Flowers", sans-serif;
+  font-size: 60px;
+}
+
+.carousel-caption{
+
+  background: rgba(6, 12, 34, 0.8);
+
+}
+
+.food-list{
+  list-style: none;
+  padding-right: 40px;
+}
+
+.ul {
+    width:100%;
+    background:red;
+    height:20px;
+    text-align:center;
+}
+.li {
+    display:block;
+    float:left;
+    margin-right:10px;
+}
+
+.GFG1 {
+  grid-area: heading;
+  margin: 0;
+  padding: 10px;
+}
+
+.GFG2 {
+  grid-area: margin;
+}
+
+.GFG3 {
+  grid-area: quote;
+}
+
+.GFG3 p{
+  color: #fff;
+  font-family: "Send Flowers", sans-serif;
+  font-size: 30px;
+
+}
+
+
+.GFG4 {
+  grid-area: info;
+}
+
+.GFG4 .container{
+  padding: 40px;
+}
+
+.main {
+  display: grid;
+  grid-gap: 5px;
+  background: url('../images/grid.webg') no-repeat 0 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+  grid-template-areas:
+    'margin heading heading heading heading heading '
+    'margin quote info info info info';
+}
+
+.GFG {
+  text-align: center;
+  padding: 0;
+  font-size: 30px;
+  justify-content: center;
+  align-content: center;
+}
